@@ -1,6 +1,7 @@
 name: "✨ Proponer una mejora"
 description: Una idea para mejorar un plugin o funcionalidad existente.
 title: "[Mejora] "
+projects: ["magnore/1"]
 labels: ["enhancement"]
 body:
   - type: textarea
