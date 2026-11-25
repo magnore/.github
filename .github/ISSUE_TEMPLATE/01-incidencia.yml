@@ -1,0 +1,75 @@
+name: "🐞 Comunicar una incidencia"
+description: Algo no funciona como debería (error, fallo, comportamiento inesperado).
+title: "[Incidencia] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar. Cuanta más información des, antes se podrá resolver.
+        **No incluyas datos personales de usuarios** (nombres, DNI, correos, datos de salud). Anonimiza capturas y logs.
+  - type: input
+    id: plataforma
+    attributes:
+      label: Plataforma / cliente
+      description: ¿En qué campus o instalación ocurre?
+      placeholder: "Nombre del campus o URL principal"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL donde ocurre
+      placeholder: "https://..."
+  - type: dropdown
+    id: entorno
+    attributes:
+      label: Entorno
+      options:
+        - Producción
+        - Pruebas / preproducción
+        - Desarrollo local
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión de Moodle
+      placeholder: "Ej.: 4.5"
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: ¿Qué ocurre?
+      description: Describe el problema.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Entrar como ...
+        2. Ir a ...
+        3. Pulsar ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: ¿Qué debería ocurrir?
+  - type: dropdown
+    id: impacto
+    attributes:
+      label: Impacto
+      options:
+        - Bloquea a todos los usuarios
+        - Afecta a varios usuarios
+        - Afecta a un usuario
+        - Menor / estético
+    validations:
+      required: true
+  - type: textarea
+    id: adjuntos
+    attributes:
+      label: Capturas o logs (anonimizados)
+      description: Puedes arrastrar imágenes aquí.
