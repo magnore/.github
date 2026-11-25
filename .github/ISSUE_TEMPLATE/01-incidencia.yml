@@ -1,6 +1,7 @@
 name: "🐞 Comunicar una incidencia"
 description: Algo no funciona como debería (error, fallo, comportamiento inesperado).
 title: "[Incidencia] "
+projects: ["magnore/1"]
 labels: ["bug"]
 body:
   - type: markdown
