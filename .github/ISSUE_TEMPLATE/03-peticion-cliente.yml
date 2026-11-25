@@ -1,6 +1,7 @@
 name: "📋 Petición de cliente"
 description: Un cliente pide un cambio, un desarrollo nuevo o una configuración.
 title: "[Cliente] "
+projects: ["magnore/1"]
 body:
   - type: markdown
     attributes:
